@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Design Documentation</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+
+<body>
+    <a href="index.html">Back to Home Page</a>
+    <div>
+        <h1 style="text-align: center;">Design Documentation</h1>
+        <h3>Design Process:</h3>
+        <ul>
+            <li>Used 2 files out of 5, as these made sense in the terms of visualization.</li>
+            <li>We have filtered out data, included players who have played matches greater than equal to 15.</li>
+            <li>For tuning the parameters, we have created various new attributes for better visualization. For examples shots on target/90min, shots/90min and goals against/90min.</li>
+        </ul>
+        <h3>Design Choices:</h3>
+        <ul>
+            <li>A wide range of colors have been used for different players, and the different positions.  </li>
+            <li>A variety of visualizations have been used including scatter plot - the reasons being that every dot in the scatter plot would represent every player, if the cursor would be moved to the dot, depending on the graph information, the attribute information associated with the player would pop up. Similarly, bar-graphs have been used where every bar represents every player, line graph and so on. </li>
+            <li>One of the key features is that all the graphs are interlinked.  For example, if we choose one of the dots in the scatter plot of save % vs Win%, that particular player’s detail will be reflected in all the other graphs.   </li>
+                <li>For both dashboard , All the comparison can be done on the basis of <br>
+                    a) Specific players
+                    b) Specific year
+                    c) Specific Season
+                    d) clubs</li>
+                    <h3>Rough Sketches:</h3>
+                
+            <img src="images/1.png" width="300", height="350">
+            <img src="images/2.png" width="300", height="350">
+            <img src="images/3.png" width="300", height="350">
+            <img src="images/4.png" width="300", height="350">
+            <img src="images/5.png" width="300", height="350">
+            <img src="images/6.png" width="300", height="350">
+            <img src="images/7.png" width="300", height="350">
+            
+   
+        <h3>Questions:</h3>
+        <h4>Questions for goalkeeper dashboard:</h4>
+        <ul>
+            <li>Is there any relationship between number of saves made by the goalkeeper and win %.?</li>
+            <li>Similarly, what is the relationship between W % and goals against /90 min?  </li>
+            <li>Can we say that more the number of clean sheets, greater is the W% or vice versa ?</li>
+            <li>So finally on the basis of the above factors, we can find the and also compare the win % of all the goalkeepers in the league so far. </li>
+        </ul>
+        
+        <img src="images/8.png" width="500", height="500">
+        <ul>
+            <li>The save % vs Win % of all the players have been shown in the first scatter plot (Top  left). These attributes have a linear relationship where both of these attributes are directly proportional. </li>
+            <li>In the second graph represents a line graph between the Goals against/90 and the Win%. The overall trend is decreasing with a few exceptions (spikes in both upwards and downwards direction)</li>
+            <li>The Third graph represents the Clean Sheet vs Win% Scatter plot. We could say that the relationship is exponential here. </li>
+        </ul>
+
+        <img src="images/9.png" width="300", height="350">
+        <ul>
+            <li>Here Stefan is a great goalkeeper , as he has high save%, conceeds less goals/90min and has more clean sheets, therefore he has high win%.</li>
+        </ul>
+        <h4>Questions for Player dashboard:</h4>
+        <ul>
+            <li>Is there any relationship between number of goals scored / 90 min and the position of the player? </li>
+            <li>Is there relation of number of goals scored / 90 min with Number of shots taken & Number of shots on target?</li>
+            <li> What is the relation between Goals/90 VS ASSISTS/90? </li><br>
+        </ul>
+        <img src="images/10.png" width="300", height="350">
+        <ul>
+            <li>The first graph represents Average number of Goals/90 and the players. Every player’s goals scored is displayed. </li>
+            <li> The second bar graph (Top right) shows us the various positions of the player Vs there Average Goals/90. From this graph we see that maximum goals are scored by the forward players.</li>
+                <li> The graph on the bottom left represents Average Shots/90 and Avg Shots on Goal/90. Again like mentioned before, as the number of shots increase, the better chances of Shots on Goal and scoring a goal. </li>
+                <li>The last graph shows the relation between Goals/90 and Assists/90.</li>
+        </ul>
+
+        <img src="images/11.png" width="300", height="350">
+        <ul>
+            <li> Here Carlos Ruiz is a great player as we see that his avg Shots/90 is high and so is the SOG/90. He has a high Avg G/90 and Assista/90. As he scores more number of goals/90 we see that the position he is, in is the Forward position. </li>
+        </ul>
+
+        <h3>References:</h3>
+        <ul>
+           <li>https://www.kaggle.com/josephvm/major-league-soccer-dataset</li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
