@@ -21,15 +21,15 @@
         }
         .mls {
             display: flex;
-            flex-wrap: wrap;
             justify-content: center;
             gap: 20px;
             padding: 20px;
             box-sizing: border-box;
+            flex-wrap: wrap;
+            max-width: 1000px;
         }
         .mls-item {
-            flex: 1 1 300px; /* Adjusted width for smaller screens */
-            max-width: 100%; /* Ensure items don't exceed container width */
+            width: 300px; /* Fixed width for each card */
             height: 400px;
             display: flex;
             flex-direction: column;
@@ -80,7 +80,7 @@
                 align-items: center;
             }
             .mls-item {
-                flex: 1 1 100%; /* Full width on smaller screens */
+                width: 100%; /* Full width on smaller screens */
                 max-width: 100%;
                 margin-bottom: 20px; /* Add some space between items */
             }
