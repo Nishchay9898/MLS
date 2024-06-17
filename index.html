@@ -16,7 +16,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            min-height: 100vh; /* Use min-height to ensure content stretches on smaller screens */
+            min-height: 100vh;
             text-align: center;
         }
         .mls {
@@ -30,11 +30,11 @@
             width: 100%;
         }
         .mls-item {
-            width: 300px; /* Fixed width for each card */
+            width: 300px;
             height: 400px;
             display: flex;
             flex-direction: column;
-            justify-content: space-between; /* Ensure description stays at the bottom */
+            justify-content: space-between;
             align-items: center;
             text-align: center;
             background-color: #444;
@@ -48,9 +48,9 @@
         }
         .mls-item img {
             width: 100%;
-            max-width: 100%; /* Ensure images scale properly */
-            height: auto; /* Maintain aspect ratio */
-            object-fit: cover;
+            height: 100%; /* Ensure the image fills the container */
+            object-fit: cover; /* Center crop effect */
+            object-position: center; /* Center the crop */
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
         }
@@ -72,7 +72,7 @@
         h1 {
             text-align: center;
             margin-bottom: 20px;
-            word-wrap: break-word; /* Ensure title text wraps within the container */
+            word-wrap: break-word;
         }
 
         /* Media Query for smaller screens */
@@ -82,15 +82,15 @@
                 align-items: center;
             }
             .mls-item {
-                width: 100%; /* Full width on smaller screens */
+                width: 100%;
                 max-width: 100%;
-                margin-bottom: 20px; /* Add some space between items */
+                margin-bottom: 20px;
             }
         }
     </style>
 </head>
 <body>
-    <h1>Data Visualization Of Major Soccer League</h1>
+    <h1>Major Soccer League</h1>
     <div class="mls">
         <div class="mls-item">
             <a href="Goalkeeper.html" class="description">For Goalkeeper Analysis</a>
