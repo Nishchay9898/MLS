@@ -16,7 +16,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh;
+            min-height: 100vh; /* Use min-height to ensure content stretches on smaller screens */
             text-align: center;
         }
         .mls {
@@ -27,13 +27,14 @@
             box-sizing: border-box;
             flex-wrap: wrap;
             max-width: 1000px;
+            width: 100%;
         }
         .mls-item {
             width: 300px; /* Fixed width for each card */
             height: 400px;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: space-between; /* Ensure description stays at the bottom */
             align-items: center;
             text-align: center;
             background-color: #444;
@@ -71,6 +72,7 @@
         h1 {
             text-align: center;
             margin-bottom: 20px;
+            word-wrap: break-word; /* Ensure title text wraps within the container */
         }
 
         /* Media Query for smaller screens */
@@ -88,7 +90,7 @@
     </style>
 </head>
 <body>
-    <h1>Major Soccer League</h1>
+    <h1>Data Visualization Of Major Soccer League</h1>
     <div class="mls">
         <div class="mls-item">
             <a href="Goalkeeper.html" class="description">For Goalkeeper Analysis</a>
